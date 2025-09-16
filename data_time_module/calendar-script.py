@@ -23,3 +23,23 @@ print(*days, sep='\n')
 
 print("\n hello")
 print(calendar.monthrange(2024, 6))
+
+
+print("\n *********!!!!***********")
+cal = calendar.Calendar()
+calendar.prmonth(2024, 2)
+for d in cal.itermonthdays(2024, 2):
+    print(calendar.weekday(2024, 2, d))
+    #if d not in (calendar.SATURDAY, calendar.SUNDAY): print(d)
+
+
+calendar.prmonth(2008, 7)
+
+print(calendar.weekday(2024, 3, 5))
+print(calendar.weekday(2024, 3, 6))
+print(calendar.weekday(2024, 3, 7))
+print(calendar.weekday(2024, 3, 8))
+print(calendar.weekday(2024, 3, 9))
+print(calendar.weekday(2024, 3, 10))
+print(calendar.weekday(2024, 3, 11))
+print(calendar.weekday(2024, 3, 12))
